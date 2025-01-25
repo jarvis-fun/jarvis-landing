@@ -1,7 +1,5 @@
 import React from "react";
 import DynamicCard from "./DynamicCard";
-import ai from "/images/ai.png";
-import strategy from "/images/strategy.png";
 import agent from "/images/agent.png";
 import liquidity from "/images/liquidity.png";
 const DynamicCards = () => {

@@ -10,4 +10,6 @@ export const SocialLinks = {
     "https://dexscreener.com/solana/cojffrd9e87qdgccwzehupunajznkkc5abri91gqcjhc",
 };
 
-export const WhitePaperLink='https://s3.ap-south-1.amazonaws.com/jarvis.fun/whitepaper.pdf'
+export const WhitePaperLink='https://jarvis-ai.gitbook.io/docs'
+
+export const jarvisDashboard = 'https://app.jarvis.fun/'

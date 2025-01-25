@@ -1,4 +1,3 @@
-
 const FeaturesCard = ({ heading, children, translateY }) => {
   return (
     <div className="group relative flex flex-col justify-between rounded-2xl w-[413px] h-[441px] overflow-hidden bg-[#1b1b1b] hover:shadow-features-card-shadow transition-all duration-500">

@@ -1,5 +1,6 @@
-import { WATCH_DEMO, WhitePaperLink } from "../../utilis/const";
+import { WATCH_DEMO, WhitePaperLink, jarvisDashboard } from "../../utilis/const";
 import Frame from "/images/Frame.png";
+import {ReactTyped} from "react-typed";
 
 const Hero = () => {
   return (
@@ -34,15 +35,27 @@ const Hero = () => {
 
       <div className="flex justify-center items-center mt-20 w-[100%] relative">
         <div className="absolute left-6 sm:left-40 inset-0 bg-gradient-to-r from-[#00BCBC] to-[#E8E337] w-[90%] sm:w-[70%] blur-[20px] animate-gradient-move"></div>
-        <input
-          type="text"
-          readOnly
-          placeholder="Coming Soon!"
-          className="relative z-10 w-[90%] sm:w-[70%] rounded-full h-[48px] bg-black text-white outline-none  pt-4 pr-36 pb-4 pl-6"
-        />
+        <ReactTyped
+            strings={[
+              "Jarvis, snipe new tokens at 50 SOL liquidity instantly.",
+              "Monitor Elon's tweets, invest $100 in token calls.",
+            ]}
+            typeSpeed={40}
+            backSpeed={55}
+            attr="placeholder"
+            loop
+            className="relative z-10 w-[90%] sm:w-[70%] rounded-full h-[48px] bg-black text-white outline-none  pt-4 pr-36 pb-4 pl-6"
+        >
+          <input
+              type="text"
+              readOnly
+              className="bg-black text-white outline-none"
+              style={{ width: "100%" }}
+          />
+        </ReactTyped>
         <button
-          className="relative z-10 -ml-32  flex items-center  justify-center gap-2 bg-gray-700 rounded-full w-[122px] h-[40px] text-gray-00 "
-          disabled
+          className="relative z-10 -ml-32  flex items-center  justify-center gap-2 bg-primary rounded-full w-[122px] h-[40px] text-gray-00 "
+          onClick={() =>window.open(jarvisDashboard,"_blank")}
         >
           <img src={Frame} alt="frame" />
           Submit

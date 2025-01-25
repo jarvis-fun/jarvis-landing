@@ -1,4 +1,4 @@
-import { SocialLinks } from "../../utilis/const";
+import { jarvisDashboard, SocialLinks } from "../../utilis/const";
 import Logo from "/images/logo.png";
 
 const Header = () => {
@@ -12,13 +12,26 @@ const Header = () => {
           <img src={Logo} alt="logo" />
         </div>
 
-        <div className="items-center justify-center bg-primary px-4 h-[32px] rounded-full  ">
-          <button className="font-gilroy font-semibold text-center align-sub" onClick={() =>window.open(SocialLinks.Dexscreener,"_blank")}>Buy Jarvis</button>
+        <div className="flex gap-4">
+          <div className="items-center justify-center bg-primary px-4 h-[32px] rounded-full  ">
+            <button
+              className="font-gilroy font-semibold text-center align-sub"
+              onClick={() => window.open(jarvisDashboard, "_blank")}
+            >
+              Get Started
+            </button>
+          </div>
+          <div className="border-2 border-secondary text-secondary px-4 items-center font-semibold rounded-full h-[32px] font-gilroy hover:bg-secondary hover:text-black">
+            <button
+              className="font-gilroy font-semibold text-center align-sub"
+              onClick={() => window.open(SocialLinks.Dexscreener, "_blank")}
+            >
+              Buy Jarvis
+            </button>
+          </div>
         </div>
       </div>
     </div>
-
-
   );
 };
 
